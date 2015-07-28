@@ -50,6 +50,9 @@ NSString *DEFAULT_TITLE;
     if (self) {
         [self setupDefaultAttributes];
         
+        //%%% auto resizing on screen rotation
+        self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
         self.backgroundColor = defaultViewColor;
         
         //%%% title setup (the bolded text at the top of the view)
